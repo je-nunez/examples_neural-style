@@ -13,7 +13,7 @@ Neural-Style is an algorithm to generate artistic paintings using Deep VGG Convo
         At: https://arxiv.org/abs/1508.06576
         August-September 2015
 
-Justin Johnson has an implementation of the Neural-Style algorithm in Torch, available at one of his GitHub repositories: [https://github.com/jcjohnson/neural-style](https://github.com/jcjohnson/neural-style). 
+Justin Johnson has an implementation of the Neural-Style algorithm in Torch, available at one of his GitHub repositories: [https://github.com/jcjohnson/neural-style](https://github.com/jcjohnson/neural-style).
 
 The current repository applies that version of Neural-Style on Torch on Renaissance paintings (Leonardo da Vinci's and Sandro Botticelli's) using style images based on Impressionism (Claude Monet's) and normal photographs.
 
@@ -33,9 +33,12 @@ Other options to note at first sight are `-save_iter <#-iters>`, to save the tra
 
 # Examples on some Renaissance paintings:
 
-Da Vinci's Mona Lisa as content-image with Monet's "Poppy Field near Giverny" as style image:
+* Da Vinci's Mona Lisa as content-image with Monet's "Poppy Field near Giverny" as style image (it is noticed here the effects of the lights of Impressionism on that Renassaince painting):
 
-     th neural_style.lua -style_image background_Claude_Monet_Poppy_Field_near_Giverny.jpg -content_image Da_Vinci_Mona_Lisa.jpg -output_image Mix_Da_Vinci_Mona_Lisa_Monet_Landscape.png -gpu -1
+     th neural_style.lua -style_image background_Claude_Monet_Poppy_Field_near_Giverny.jpg \
+                         -content_image Da_Vinci_Mona_Lisa.jpg \
+                         -output_image Mix_Da_Vinci_Mona_Lisa_Monet_Landscape.png \
+                         -gpu -1
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Da_Vinci_Mona_Lisa_Monet_Landscape/Da_Vinci_Mona_Lisa.jpg" height="250px">
@@ -49,9 +52,12 @@ Result:
 </p>
 
 
-Boticelli's Primavera as content-image with a real-life photograph of the Avenue of Live Oaks at Boone Hall in Mount Pleasant, South Carolina (planted in 1743) as style image:
+* Boticelli's Primavera as content-image with a real-life photograph of the Avenue of Live Oaks at Boone Hall in Mount Pleasant, South Carolina (planted in 1743) as style image:
 
-     th neural_style.lua -style_image background_Claude_Monet_Poppy_Field_near_Giverny.jpg -content_image Da_Vinci_Mona_Lisa.jpg -output_image Mix_Da_Vinci_Mona_Lisa_Monet_Landscape.png -gpu -1
+     th neural_style.lua -style_image background_Claude_Monet_Poppy_Field_near_Giverny.jpg \
+                         -content_image Da_Vinci_Mona_Lisa.jpg \
+                         -output_image Mix_Da_Vinci_Mona_Lisa_Monet_Landscape.png \
+                         -gpu -1
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Boticelli_Avenue_Oaks_Boone_Hall/Boticelli_Primavera.jpg" height="250px">
@@ -65,9 +71,12 @@ Result:
 </p>
 
 
-Boticelli's Primavera as content-image with Monet's "Spring in Giverny" (1890) as style image:
+* Boticelli's Primavera as content-image with Monet's "Spring in Giverny" (1890) as style image:
 
-     th neural_style.lua -style_image background_Claude_Monet_Spring_in_Giverny_1890.jpg -content_image Boticelli_Primavera.jpg -output_image Mix_Boticelli_Claude_Monet_Spring_in_Giverny_1890.png -gpu -1
+     th neural_style.lua -style_image background_Claude_Monet_Spring_in_Giverny_1890.jpg \
+                         -content_image Boticelli_Primavera.jpg \
+                         -output_image Mix_Boticelli_Claude_Monet_Spring_in_Giverny_1890.png \
+                         -gpu -1
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Boticelli_Claude_Monet_Spring_in_Giverny_1890/Boticelli_Primavera.jpg" height="250px">
@@ -81,9 +90,14 @@ Result:
 </p>
 
 
-As an example of applying a weighted sequence of style images to an input content image, it appears below Boticelli's Primavera as content image, and style-images the weighted sequence of a photography of Algonquin Provincial Park, the Avenue of Live Oaks at Boone Hall (S.C.), and the Monet's painting "Spring in Giverny" (1890), in that order, with relative weights 10, 10 and 15 among the three, respectively:
+* As an example of applying a weighted sequence of style images to an input content image, it appears below Boticelli's Primavera as content image, and style-images the weighted sequence of a photography of Algonquin Provincial Park, the Avenue of Live Oaks at Boone Hall (S.C.), and the Monet's painting "Spring in Giverny" (1890), in that order, with relative weights 10, 10 and 15 among the three, respectively:
 
-     th neural_style.lua -style_image Autumn_in_Algonquin_Park.jpg,background_Boone_Hall_Mt_Pleasant_South_Carolina.jpg,background_Claude_Monet_Spring_in_Giverny_1890.jpg -style_blend_weights 10,10,15 -content_image Boticelli_Primavera.jpg -output_image Mix_Boticelli_Algonquin_Park_Boone_Hall_SC_Monet_Spring_in_Giverny.png -gpu -1
+     th neural_style.lua \
+          -style_image Autumn_in_Algonquin_Park.jpg,background_Boone_Hall_Mt_Pleasant_South_Carolina.jpg,background_Claude_Monet_Spring_in_Giverny_1890.jpg \
+          -style_blend_weights 10,10,15 \
+          -content_image Boticelli_Primavera.jpg \
+          -output_image Mix_Boticelli_Algonquin_Park_Boone_Hall_SC_Monet_Spring_in_Giverny.png \
+          -gpu -1
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Boticelli_Algonquin_Park_Boone_Hall_SC_Monet_Spring_in_Giverny/Boticelli_Primavera.jpg" height="250px">
