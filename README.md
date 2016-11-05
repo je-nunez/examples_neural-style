@@ -38,6 +38,28 @@ Similarly, the optional parameter `-style_blend_weights` is the list of the rela
 
 Other options to note at first sight are `-save_iter <#-iters>`, to save the transformed image after `<#-iters>` iterations (default: 100) with a filename and format deduced from the `-output_image` filename; and the option `-image_size <#-max-img-dimension-in-pixels>` with the maximum (lateral) dimension the resulting image(s) will have (default is 512, ie., 512 pixels lateral size of the resulting image(s)).
 
+
+# Other implementations of Neural Style in other backends and languages
+
+Other implementations of Neural Style in other backends and languages (this is not meant as an exhaustive or authoritative reference, just some links to other implementations if you use other backend, not Torch):
+
+* Lasagne and Theano backend in IPython notebook format: [https://github.com/Lasagne/Recipes/blob/master/examples/styletransfer/Art%20Style%20Transfer.ipynb](https://github.com/Lasagne/Recipes/blob/master/examples/styletransfer/Art%20Style%20Transfer.ipynb)
+
+* Tensorflow: [https://github.com/anishathalye/neural-style](https://github.com/anishathalye/neural-style) and [https://github.com/woodrush/neural-art-tf](https://github.com/woodrush/neural-art-tf)
+
+* Keras on either the Tensorflow or the Theano backend: [https://github.com/titu1994/Neural-Style-Transfer](https://github.com/titu1994/Neural-Style-Transfer)
+
+* Scala on the Java Virtual Machine on MxNet: [https://github.com/dmlc/mxnet/blob/master/scala-package/examples/src/main/scala/ml/dmlc/mxnet/examples/neuralstyle/NeuralStyle.scala](https://github.com/dmlc/mxnet/blob/master/scala-package/examples/src/main/scala/ml/dmlc/mxnet/examples/neuralstyle/NeuralStyle.scala)
+
+* Caffe and PyCaffe: [https://github.com/fzliu/style-transfer](https://github.com/fzliu/style-transfer)
+
+* DeepPy: [https://github.com/andersbll/neural_artistic_style](https://github.com/andersbll/neural_artistic_style)
+
+* MatConvNet in MatLab: [https://github.com/aravindhm/neural-style-matconvnet/](https://github.com/aravindhm/neural-style-matconvnet/)
+
+* Other references may be posted in GitXiv: [http://www.gitxiv.com/posts/jG46ukGod8R7Rdtud/a-neural-algorithm-of-artistic-style](http://www.gitxiv.com/posts/jG46ukGod8R7Rdtud/a-neural-algorithm-of-artistic-style)
+
+
 # Examples on some Renaissance paintings:
 
 (As mentioned above, in these examples it is used `-gpu -1` to use only the main CPU. You may put here the index -0-based- of the GPU you want to use.)
