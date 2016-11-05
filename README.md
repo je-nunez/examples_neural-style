@@ -33,6 +33,8 @@ Other options to note at first sight are `-save_iter <#-iters>`, to save the tra
 
 # Examples on some Renaissance paintings:
 
+(As mentioned above, in these examples it is used `-gpu -1` to use only the main CPU. You may put here the index -0-based- of the GPU you want to use.)
+
 * Da Vinci's Mona Lisa as content-image with Monet's "Poppy Field near Giverny" as style image (it is noticed here the effects of the lights of Impressionism on that Renassaince painting):
 
 
