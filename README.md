@@ -4,7 +4,7 @@ This project is a *work in progress*. The implementation is *incomplete* and sub
 
 # Brief
 
-Examples of Neural-Style on Renaissance paintings on styles based on Impressionism and Photographs.
+Examples of Neural-Style on Renaissance paintings (Pre-Raphaelite as well) on styles based on Impressionism and Photographs.
 
 Neural-Style is an algorithm to generate artistic paintings using Deep VGG Convolutional Neural Networks. The algorithm is exposed here:
 
@@ -13,9 +13,16 @@ Neural-Style is an algorithm to generate artistic paintings using Deep VGG Convo
         At: https://arxiv.org/abs/1508.06576
         August-September 2015
 
+There is more research perfecting Neural-Style, like for example:
+
+    Improving the Neural Algorithm of Artistic Style
+         Authors: Roman Novak, Yaroslav Nikulin
+         At: https://arxiv.org/abs/1605.04603
+         May 2016
+
 Justin Johnson has an implementation of the Neural-Style algorithm in Torch, available at one of his GitHub repositories: [https://github.com/jcjohnson/neural-style](https://github.com/jcjohnson/neural-style).
 
-The current repository applies that version of Neural-Style on Torch on Renaissance paintings (Leonardo da Vinci's and Sandro Botticelli's) using style images based on Impressionism (Claude Monet's) and normal photographs.
+The current repository applies that version of Neural-Style on Torch on Renaissance paintings (Leonardo da Vinci's and Sandro Botticelli's) and Pre-Raphaelite (Ford Madox Brown's) using style images based on Impressionism (Claude Monet's) and normal photographs.
 
 To install the program, consult Justin Johnson's instructions at [https://github.com/jcjohnson/neural-style#setup](https://github.com/jcjohnson/neural-style#setup).
 
@@ -35,7 +42,7 @@ Other options to note at first sight are `-save_iter <#-iters>`, to save the tra
 
 (As mentioned above, in these examples it is used `-gpu -1` to use only the main CPU. You may put here the index -0-based- of the GPU you want to use.)
 
-* Da Vinci's Mona Lisa as content-image with Monet's "Poppy Field near Giverny" as style image (it is noticed here the effects of the lights of Impressionism on that Renassaince painting):
+* Da Vinci's Mona Lisa as content-image with Monet's "Poppy Field near Giverny" as style image (it is noticed here the effects of the lights of Impressionism on that Renaissaince painting):
 
 
          th neural_style.lua -style_image background_Claude_Monet_Poppy_Field_near_Giverny.jpg \
@@ -44,8 +51,8 @@ Other options to note at first sight are `-save_iter <#-iters>`, to save the tra
                              -gpu -1
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Da_Vinci_Mona_Lisa_Monet_Landscape/Da_Vinci_Mona_Lisa.jpg" height="250px">
 <img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Da_Vinci_Mona_Lisa_Monet_Landscape/background_Claude_Monet_Poppy_Field_near_Giverny.jpg" height="250px">
+<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Da_Vinci_Mona_Lisa_Monet_Landscape/Da_Vinci_Mona_Lisa.jpg" height="250px">
 </p>
 
 Result:
@@ -64,8 +71,8 @@ Result:
                              -gpu -1
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Boticelli_Avenue_Oaks_Boone_Hall/Boticelli_Primavera.jpg" height="250px">
 <img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Boticelli_Avenue_Oaks_Boone_Hall/background_Avenue_Oaks_Boone_Hall_Mount_Pleasant_South_Carolina.jpg" height="250px">
+<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Boticelli_Avenue_Oaks_Boone_Hall/Boticelli_Primavera.jpg" height="250px">
 </p>
 
 Result:
@@ -84,14 +91,54 @@ Result:
                              -gpu -1
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Boticelli_Claude_Monet_Spring_in_Giverny_1890/Boticelli_Primavera.jpg" height="250px">
 <img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Boticelli_Claude_Monet_Spring_in_Giverny_1890/background_Claude_Monet_Spring_in_Giverny_1890.jpg" height="250px">
+<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Boticelli_Claude_Monet_Spring_in_Giverny_1890/Boticelli_Primavera.jpg" height="250px">
 </p>
 
 Result:
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Boticelli_Claude_Monet_Spring_in_Giverny_1890/Mix_Boticelli_Claude_Monet_Spring_in_Giverny_1890.png" height="500px">
+</p>
+
+
+* Ford Madox Brown's "An English Autumn Afternoon" as content-image with Monet's "Spring in Giverny" (1890) as style image:
+
+
+         th neural_style.lua -style_image background_Claude_Monet_Spring_in_Giverny_1890.jpg \
+                             -content_image Ford_Madox_Brown_An_English_Autumn_Afternoon.jpg \
+                             -output_image Mix_Ford_Madox_Brown_An_English_Autumn_Afternoon_Monet_Spring_in_Giverny_1890.png \
+                             -gpu -1
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Ford_Madox_Brown_An_English_Autumn_Afternoon_Monet_Spring_in_Giverny/background_Claude_Monet_Spring_in_Giverny_1890.jpg" height="250px">
+<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Ford_Madox_Brown_An_English_Autumn_Afternoon_Monet_Spring_in_Giverny/Ford_Madox_Brown_An_English_Autumn_Afternoon.jpg" height="250px">
+</p>
+
+Result:
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Ford_Madox_Brown_An_English_Autumn_Afternoon_Monet_Spring_in_Giverny/Mix_Ford_Madox_Brown_An_English_Autumn_Afternoon_Monet_Spring_in_Giverny_1890.png" height="500px">
+</p>
+
+
+* Ford Madox Brown's "An English Autumn Afternoon" as content-image with Monet's "Poppy Field near Giverny" as style image:
+
+
+         th neural_style.lua -style_image background_Claude_Monet_Poppy_Field_near_Giverny.jpg \
+                             -content_image Ford_Madox_Brown_An_English_Autumn_Afternoon.jpg \
+                             -output_image Mix_Ford_Madox_Brown_An_English_Autumn_Afternoon_Monet_Poppy_Field_near_Giverny.png \
+                             -gpu -1
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Ford_Madox_Brown_An_English_Autumn_Afternoon_Monet_Poppy_Field_near_Giverny/background_Claude_Monet_Poppy_Field_near_Giverny.jpg" height="250px">
+<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Ford_Madox_Brown_An_English_Autumn_Afternoon_Monet_Poppy_Field_near_Giverny/Ford_Madox_Brown_An_English_Autumn_Afternoon.jpg" height="250px">
+</p>
+
+Result:
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Ford_Madox_Brown_An_English_Autumn_Afternoon_Monet_Poppy_Field_near_Giverny/Mix_Ford_Madox_Brown_An_English_Autumn_Afternoon_Monet_Poppy_Field_near_Giverny.png" height="500px">
 </p>
 
 
@@ -106,15 +153,21 @@ Result:
               -gpu -1
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Boticelli_Algonquin_Park_Boone_Hall_SC_Monet_Spring_in_Giverny/Boticelli_Primavera.jpg" height="250px">
 <img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Boticelli_Algonquin_Park_Boone_Hall_SC_Monet_Spring_in_Giverny/Autumn_in_Algonquin_Park.jpg" height="250px">
 <img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Boticelli_Algonquin_Park_Boone_Hall_SC_Monet_Spring_in_Giverny/background_Boone_Hall_Mt_Pleasant_South_Carolina.jpg" height="250px">
 <img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Boticelli_Algonquin_Park_Boone_Hall_SC_Monet_Spring_in_Giverny/background_Claude_Monet_Spring_in_Giverny_1890.jpg" height="250px">
+<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Boticelli_Algonquin_Park_Boone_Hall_SC_Monet_Spring_in_Giverny/Boticelli_Primavera.jpg" height="250px">
 </p>
 
 Result:
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Boticelli_Algonquin_Park_Boone_Hall_SC_Monet_Spring_in_Giverny/Mix_Boticelli_Algonquin_Park_Boone_Hall_SC_Monet_Spring_in_Giverny.png" height="500px">
+</p>
+
+Notice in this example that the option `-save_iter <#-iters>`, to save the transformed image after `<#-iters>` iterations (default: 100), is very useful, since it writes versions of the image (through the ConvNet iterations) which may have artistic value by themselves. For example, this one in iteration 600:
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Boticelli_Algonquin_Park_Boone_Hall_SC_Monet_Spring_in_Giverny/Mix_Boticelli_Algonquin_Park_Boone_Hall_SC_Monet_Spring_in_Giverny_600.png" height="500px">
 </p>
 
