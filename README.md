@@ -15,10 +15,10 @@ Neural-Style is an algorithm to generate artistic paintings using Deep VGG Convo
 
 There is more research perfecting Neural-Style, like for example:
 
-    Improving the Neural Algorithm of Artistic Style
-         Authors: Roman Novak, Yaroslav Nikulin
-         At: https://arxiv.org/abs/1605.04603
-         May 2016
+     Improving the Neural Algorithm of Artistic Style
+        Authors: Roman Novak, Yaroslav Nikulin
+        At: https://arxiv.org/abs/1605.04603
+        May 2016
 
 Justin Johnson has an implementation of the Neural-Style algorithm in Torch, available at one of his GitHub repositories: [https://github.com/jcjohnson/neural-style](https://github.com/jcjohnson/neural-style).
 
@@ -55,6 +55,8 @@ Other implementations of Neural Style in other backends and languages (this is n
 
 * DeepPy: [https://github.com/andersbll/neural_artistic_style](https://github.com/andersbll/neural_artistic_style)
 
+* Chainer framework in Python: [https://github.com/yusuketomoto/chainer-fast-neuralstyle](https://github.com/yusuketomoto/chainer-fast-neuralstyle)
+
 * MatConvNet in MatLab: [https://github.com/aravindhm/neural-style-matconvnet/](https://github.com/aravindhm/neural-style-matconvnet/)
 
 * Other references may be posted in GitXiv: [http://www.gitxiv.com/posts/jG46ukGod8R7Rdtud/a-neural-algorithm-of-artistic-style](http://www.gitxiv.com/posts/jG46ukGod8R7Rdtud/a-neural-algorithm-of-artistic-style)
@@ -87,9 +89,9 @@ Result:
 * Boticelli's Primavera as content-image with a real-life photograph of the Avenue of Live Oaks at Boone Hall in Mount Pleasant, South Carolina (planted in 1743) as style image:
 
 
-         th neural_style.lua -style_image background_Claude_Monet_Poppy_Field_near_Giverny.jpg \
-                             -content_image Da_Vinci_Mona_Lisa.jpg \
-                             -output_image Mix_Da_Vinci_Mona_Lisa_Monet_Landscape.png \
+         th neural_style.lua -style_image background_Avenue_Oaks_Boone_Hall_Mount_Pleasant_South_Carolina.jpg \
+                             -content_image Boticelli_Primavera.jpg \
+                             -output_image Mix_Boticelli_Avenue_Oaks_Boone_Hall.png \
                              -gpu -1
 
 <p align="center">
