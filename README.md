@@ -105,6 +105,25 @@ Result:
 <img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Boticelli_Avenue_Oaks_Boone_Hall/Mix_Boticelli_Avenue_Oaks_Boone_Hall.png" height="500px">
 </p>
 
+* [Tintoretto's "The Annunciation"](https://savevenice.org/publications/the-annunciation-altarpiece-by-jacopo-tintoretto-in-the-church-of-san-rocco-restored/) as content-image with the Smithsonian’s National Portrait Gallery's Robert and Arlene Kogod Courtyard's ceiling as style image:
+
+
+         th neural_style.lua -style_image Robert_and_Arlene_Kogod_Courtyard_ceiling.jpg \
+                             -content_image  Tintoretto_The_Annunciation.jpg \
+                             -output_image Mix_Tintoretto_The_AnnunciationRobert_Kogod_Courtyard.png \
+                             -gpu -1
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Tintoretto_The_AnnunciationRobert_Kogod_Courtyard/Robert_and_Arlene_Kogod_Courtyard_ceiling.jpg" height="250px">
+<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Tintoretto_The_AnnunciationRobert_Kogod_Courtyard/Tintoretto_The_Annunciation.jpg" height="250px">
+</p>
+
+Result:
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Tintoretto_The_AnnunciationRobert_Kogod_Courtyard/Mix_Tintoretto_The_AnnunciationRobert_Kogod_Courtyard.png" height="500px">
+</p>
+
 
 * Boticelli's Primavera as content-image with Monet's "Spring in Giverny" (1890) as style image:
 
