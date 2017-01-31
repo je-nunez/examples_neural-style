@@ -106,6 +106,45 @@ Result:
 </p>
 
 
+* Titian's "Pastoral Concert" as content-image with fountain riples as style image:
+
+
+         th neural_style.lua -style_image Fountain_ripples.jpg \
+                             -content_image  Titian_Pastoral_Concert.jpg \
+                             -output_image Mix_Titian_Pastoral_Concert_Fountain_ripples.png \
+                             -gpu -1
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Titian_Pastoral_Concert_Fountain_ripples/Fountain_ripples.jpg" height="250px">
+<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Titian_Pastoral_Concert_Fountain_ripples/Titian_Pastoral_Concert.jpg" height="250px">
+</p>
+
+Result:
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Titian_Pastoral_Concert_Fountain_ripples/Mix_Titian_Pastoral_Concert_Fountain_ripples.png" height="500px">
+</p>
+
+
+* Giovanni Bellini, Titian, and Dosso Dossi's "The Feast of the Gods" as content-image with a photograph of the HEP FIVE Ferris Wheel at Osaka as style image:
+
+
+         th neural_style.lua -style_image background_HEP_Five_Ferris_Wheel.jpg \
+                             -content_image  Titian_Giovanni_Bellini_The_Feast_of_the_Gods.jpg \
+                             -output_image Mix_Titian_Giovanni_Bellini_The_Feast_of_the_Gods_HEP_Five_Ferris_Wheel.png \
+                             -gpu -1
+<p align="center">
+<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Titian_Giovanni_Bellini_The_Feast_of_the_Gods_HEP_Five_Ferris_Wheel/background_HEP_Five_Ferris_Wheel.jpg" height="250px">
+<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Titian_Giovanni_Bellini_The_Feast_of_the_Gods_HEP_Five_Ferris_Wheel/Titian_Giovanni_Bellini_The_Feast_of_the_Gods.jpg" height="250px">
+</p>
+
+Result:
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Titian_Giovanni_Bellini_The_Feast_of_the_Gods_HEP_Five_Ferris_Wheel/Mix_Titian_Giovanni_Bellini_The_Feast_of_the_Gods_HEP_Five_Ferris_Wheel.png" height="500px">
+</p>
+
+
 * Boticelli's Primavera as content-image with a real-life photograph of the Avenue of Live Oaks at Boone Hall in Mount Pleasant, South Carolina (planted in 1743) as style image:
 
 
