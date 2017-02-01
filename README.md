@@ -26,7 +26,7 @@ The current repository applies that version of Neural-Style on Torch on Renaissa
 
 To install the program, consult Justin Johnson's instructions at [https://github.com/jcjohnson/neural-style#setup](https://github.com/jcjohnson/neural-style#setup).
 
-The options to the program are explained in [https://github.com/jcjohnson/neural-style#usage](https://github.com/jcjohnson/neural-style#usage). Here it is used `-gpu -1` to use only the main CPU. To note, this program offers the option to apply a weighted sequence of several style images on the input content image, which is a very powerful resource: the list of style images needs to be separated by "," (commas), without space between the paths to the style-images:
+The options to the program are explained in [https://github.com/jcjohnson/neural-style#usage](https://github.com/jcjohnson/neural-style#usage). Here it is used `-gpu -1` to use only the main CPU. You may modify the weights of the style image and/or the content image relative to the algorithm, by using the `-style_weight W` or `-content_weight W`, respectively, to set that weight to the floating-point number W (the current, implicit defaults for W are 100 for `-style_weight`, and 5 for `-content_weight`). To note, this program offers the option to apply a weighted sequence of several style images on the input content image, which is a very powerful resource: the list of style images needs to be separated by "," (commas), without space between the paths to the style-images:
 
        -style_image  style_image1,style_image2[,...]
 
@@ -142,6 +142,18 @@ Result:
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Titian_Giovanni_Bellini_The_Feast_of_the_Gods_HEP_Five_Ferris_Wheel/Mix_Titian_Giovanni_Bellini_The_Feast_of_the_Gods_HEP_Five_Ferris_Wheel.png" height="500px">
+</p>
+
+To decrease the effect above of the red color on the content image, you might use, among other ways, the option `-content_weight W` to increase the relative weight of the content image for the neural network (the implicit, current default for `-content_weight` is 5), e.g., for `-content_weight 80` it results:
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Titian_Giovanni_Bellini_The_Feast_of_the_Gods_HEP_Five_Ferris_Wheel_with_a_content_weight/Mix_Titian_Giovanni_Bellini_The_Feast_of_the_Gods_HEP_Five_Ferris_Wheel_with_a_content_weight.png" height="500px">
+</p>
+
+or you might decrease the relative weight of the style image for the neural network with the option `-style_weight W` (the implicit, current default for `-style_weight` is 100), e.g., for `-style_weight 7.69230` it results:
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Titian_Giovanni_Bellini_The_Feast_of_the_Gods_HEP_Five_Ferris_Wheel_with_a_style_weight/Mix_Titian_Giovanni_Bellini_The_Feast_of_the_Gods_HEP_Five_Ferris_Wheel_with_a_style_weight.png" height="500px">
 </p>
 
 
