@@ -150,7 +150,7 @@ To decrease the effect above of the red color on the content image, you might us
 <img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Titian_Giovanni_Bellini_The_Feast_of_the_Gods_HEP_Five_Ferris_Wheel_with_a_content_weight/Mix_Titian_Giovanni_Bellini_The_Feast_of_the_Gods_HEP_Five_Ferris_Wheel_with_a_content_weight.png" height="500px">
 </p>
 
-or you might decrease the relative weight of the style image for the neural network with the option `-style_weight W` (the implicit, current default for `-style_weight` is 100). E.g., for `-style_weight 7.69230`, it results:
+or you might decrease the relative weight of the style image for the neural network with the option `-style_weight W` (the implicit, current default for `-style_weight` is 100). E.g., for `-style_weight 6.25`, it results:
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Titian_Giovanni_Bellini_The_Feast_of_the_Gods_HEP_Five_Ferris_Wheel_with_a_style_weight/Mix_Titian_Giovanni_Bellini_The_Feast_of_the_Gods_HEP_Five_Ferris_Wheel_with_a_style_weight.png" height="500px">
