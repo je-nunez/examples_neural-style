@@ -176,6 +176,12 @@ Result:
 <img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Boticelli_Avenue_Oaks_Boone_Hall/Mix_Boticelli_Avenue_Oaks_Boone_Hall.png" height="500px">
 </p>
 
+As always, you may add other parameters to the neural-style processing as to hint for other tertiary qualities in both images. E.g., adding the parameter `-content_weight 90` (its implicit default value is 5) to the command-line in this example, we obtain:
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Boticelli_Avenue_Oaks_Boone_Hall_content_weight_90/Mix_Boticelli_Avenue_Oaks_Boone_Hall_content_weight_90.png" height="500px">
+</p>
+
 
 * Boticelli's Primavera as content-image with Monet's "Spring in Giverny" (1890) as style image:
 
