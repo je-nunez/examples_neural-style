@@ -106,6 +106,32 @@ Result:
 </p>
 
 
+* Boticelli's Primavera as content-image with Wenzel Hablik's "Utopian Buildings" (1922) as style image:
+
+         th neural_style.lua -style_image background_Wenzel_Hablik_Utopian_Buildings.jpg \
+                             -content_image  Boticelli_Primavera.jpg \
+                             -output_image Mix_Boticelli_Primavera_Hablik_Utopian_Buildings.png \
+                             -gpu -1
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Boticelli_Primavera_Hablik_Utopian_Buildings/background_Wenzel_Hablik_Utopian_Buildings.jpg" height="250px">
+<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Boticelli_Primavera_Hablik_Utopian_Buildings/Boticelli_Primavera.jpg" height="250px">
+</p>
+
+Final result:
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Boticelli_Primavera_Hablik_Utopian_Buildings/Mix_Boticelli_Primavera_Hablik_Utopian_Buildings.png" height="500px">
+</p>
+
+(Although some intermediate images generated also have its own tertiary qualities, distinct to the final result above, like the image generated after 300 iterations:
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/je-nunez/examples_neural-style/master/examples/Mix_Boticelli_Primavera_Hablik_Utopian_Buildings/Mix_Boticelli_Primavera_Hablik_Utopian_Buildings_300.png" height="500px">
+</p>
+)
+
+
 * Titian's "Pastoral Concert" as content-image with fountain riples as style image:
 
 
