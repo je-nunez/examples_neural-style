@@ -131,6 +131,41 @@ Final result:
 </p>
 )
 
+* In 1883, the painter [Claude Monet](https://en.wikipedia.org/wiki/Claude_Monet), one of the pioneers of Impressionism for more than a decade, rented a house and property in Giverny, which he later bought and lived there till his death in 1926. This is a real life photography of a garden at Giverny:
+
+<p align="center">
+<img src="examples/Mix_photo_Monet_Garden_at_Giverny_real_photograph_morning_Clouds_wikipedia_original_colors/photo_Monet_Garden_at_Giverny.jpg" height="250px">
+</p>
+
+Impresionism was influenced by landscape painting and the effects of different shades of light on it. For example, certain shade of light could have been natural, from the clouds:
+
+<p align="center">
+<img src="examples/Mix_photo_Monet_Garden_at_Giverny_real_photograph_morning_Clouds_wikipedia_original_colors/real_photograph_morning_Clouds_wikipedia.jpg" height="250px">
+</p>
+
+A neural-network using the neural-style architecture (and weights) produces, from these two real-life photographs above, and using the option `-original_colors 1` to try to preserve the colors in the content input image:
+
+         th neural_style.lua -style_image real_photograph_morning_Clouds_wikipedia.jpg \
+                             -content_image photo_Monet_Garden_at_Giverny.jpg \
+                             -output_image Mix_photo_Monet_Garden_at_Giverny_real_photograph_morning_Clouds_wikipedia_original_colors.png \
+                             -original_colors 1 \
+                             -gpu -1
+
+Result (there are other variations of the painting, with other tertiary qualities, saved during the iterations of the neural-style algorithm):
+
+<p align="center">
+<img src="examples/Mix_photo_Monet_Garden_at_Giverny_real_photograph_morning_Clouds_wikipedia_original_colors/photo_Monet_Garden_at_Giverny.jpg" height="250px">
+</p>
+
+(Below are some of the paintings that Monet really painted of his garden in Giverny:
+
+<p align="center">
+<img src="examples/Mix_photo_Monet_Garden_at_Giverny_real_photograph_morning_Clouds_wikipedia_original_colors/painting_Monet_Garden_at_Giverny_1.jpg" height="250px">
+<img src="examples/Mix_photo_Monet_Garden_at_Giverny_real_photograph_morning_Clouds_wikipedia_original_colors/painting_Monet_Garden_at_Giverny_2.jpg" height="250px">
+</p>
+
+As an hypothesis, it seems as if Monet combined other techniques, as minor touches, into some of his paintings, like some form of [Michelangelo's Cangiantismo](http://www.webexhibits.org/colorart/michelangelo.html), perhaps.
+)
 
 * Titian's "Pastoral Concert" as content-image with fountain riples as style image:
 
