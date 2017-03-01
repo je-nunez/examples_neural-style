@@ -153,9 +153,9 @@ A neural-network using the neural-style architecture (and weights) produces, fro
 
 Result (there are other variations of the painting, with other tertiary qualities, saved during the iterations of the neural-style algorithm):
 
-<p align="center">
-<img src="examples/Mix_photo_Monet_Garden_at_Giverny_real_photograph_morning_Clouds_wikipedia_original_colors/Mix_photo_Monet_Garden_at_Giverny_real_photograph_morning_Clouds_wikipedia_original_colors.png" height="250px">
-</p>
+| Original Photo            |            | Obtained by neural-style network |
+|:-------------------------:|------------|:---------------------------------|
+| <p align="center"> <img src="examples/Mix_photo_Monet_Garden_at_Giverny_real_photograph_morning_Clouds_wikipedia_original_colors/Mix_photo_Monet_Garden_at_Giverny_real_photograph_morning_Clouds_wikipedia_original_colors.png" height="250px"> </p> |            | <p align="center"> <img src="examples/Mix_photo_Monet_Garden_at_Giverny_real_photograph_morning_Clouds_wikipedia_original_colors/photo_Monet_Garden_at_Giverny.jpg" height="250px"> </p> |
 
 (Below are some of the paintings that Monet really painted of his garden in Giverny:
 
