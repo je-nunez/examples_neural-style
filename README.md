@@ -188,7 +188,7 @@ by:
                              -original_colors 1 \
                              -gpu -1
 
-the neural network gives a hint of how it could be a painting of the Chrysler building like Claude Monet's Cathedral of Rouen:
+the neural network gives a hint of how it could be a painting of the Chrysler building with some tertiary qualities in Claude Monet's Cathedral of Rouen:
 
 <p align="center">
 <img src="examples/Mix_photo_Chrysler_Building_background_sunrise/Mix_photo_Chrysler_Building_background_sunrise.png" height="250px">
@@ -216,7 +216,7 @@ by:
                              -original_colors 1 \
                              -gpu -1
 
-the neural network gives a hint like Claude Monet's Cathedral of Rouen:
+the neural network gives a hint of some tertiary qualities like in Claude Monet's Cathedral of Rouen:
 
 <p align="center">
 <img src="examples/Mix_photo_Hallstatt_Austria_background_sunrise/Mix_photo_Hallstatt_Austria_background_sunrise.png" height="250px">
