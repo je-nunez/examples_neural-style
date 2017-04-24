@@ -167,6 +167,32 @@ Result (there are other variations of the painting, with other tertiary qualitie
 As an hypothesis, it seems as if Monet combined other techniques, as minor touches, into some of his paintings, like some form of [Michelangelo's Cangiantismo](http://www.webexhibits.org/colorart/michelangelo.html), perhaps.
 )
 
+* This an example of applying a background on a real-life photography in order to obtain tertiary qualities similar to one's of Claude Monet's in his Cathedral of Rouen series:
+
+<p align="center">
+<img src="examples/Mix_photo_Hallstatt_Austria_background_sunrise/Claude_Monet_Cathedral_Rouen.jpg" height="250px">
+</p>
+
+Applying the background in the left to the real-life photography of the town of Hallstatt, Austria, in the right:
+
+<p align="center">
+<img src="examples/Mix_photo_Hallstatt_Austria_background_sunrise/background_sunrise.jpg" height="250px">
+<img src="examples/Mix_photo_Hallstatt_Austria_background_sunrise/photo_Hallstatt_Austria.jpg" height="250px">
+</p>
+
+by:
+         th neural_style.lua -style_image background_sunrise.jpg \
+                             -content_image photo_Hallstatt_Austria.jpg \
+                             -output_image Mix_photo_Hallstatt_Austria_background_sunrise.png \
+                             -original_colors 1 \
+                             -gpu -1
+
+the neural network gives a hint like Claude Monet's Cathedral of Rouen:
+
+<p align="center">
+<img src="examples/Mix_photo_Hallstatt_Austria_background_sunrise/Mix_photo_Hallstatt_Austria_background_sunrise.png" height="250px">
+</p>
+
 * Titian's "Pastoral Concert" as content-image with fountain riples as style image:
 
 
