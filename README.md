@@ -167,6 +167,27 @@ Result (there are other variations of the painting, with other tertiary qualitie
 As an hypothesis, it seems as if Monet combined other techniques, as minor touches, into some of his paintings, like some form of [Michelangelo's Cangiantismo](http://www.webexhibits.org/colorart/michelangelo.html), perhaps.
 )
 
+* This is an example of applying a real photo as a background on a real-life photography as a content image in order to suggest tertiary qualities similar to those of Impressionism. [The content image photograph is at the Wikipedia Online Encyclopedia at [https://commons.wikimedia.org/wiki/File:Umbrellas_in_Dulcimer_Grove_at_the_Philadelphia_Folk_Festival_(7825184688).jpg]([https://commons.wikimedia.org/wiki/File:Umbrellas_in_Dulcimer_Grove_at_the_Philadelphia_Folk_Festival_(7825184688).jpg)
+
+<p align="center">
+<img src="examples/Mix_Umbrellas_in_Dulcimer_Grove_at_the_Philadelphia_Folk_Festival/real_photograph_morning_Clouds_wikipedia.jpg" height="250px">
+<img src="examples/Mix_Umbrellas_in_Dulcimer_Grove_at_the_Philadelphia_Folk_Festival/photo_Umbrellas_in_Dulcimer_Grove_at_the_Philadelphia_Folk_Festival.jpg" height="250px">
+</p>
+
+by:
+
+         th neural_style.lua -style_image real_photograph_morning_Clouds_wikipedia.jpg \
+                             -content_image photo_Umbrellas_in_Dulcimer_Grove_at_the_Philadelphia_Folk_Festival.jpg \
+                             -output_image Mix_Umbrellas_in_Dulcimer_Grove_at_the_Philadelphia_Folk_Festival.png \
+                             -original_colors 1 \
+                             -gpu -1
+
+the neural network produces a painting with some Impressionist tertiary qualities:
+
+<p align="center">
+<img src="examples/Mix_Umbrellas_in_Dulcimer_Grove_at_the_Philadelphia_Folk_Festival/Mix_Umbrellas_in_Dulcimer_Grove_at_the_Philadelphia_Folk_Festival.png" height="250px">
+</p>
+
 * This is an example of applying a background on a real-life photography in order to obtain tertiary qualities similar to one's of Claude Monet's in his Cathedral of Rouen series:
 
 <p align="center">
