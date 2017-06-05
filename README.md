@@ -188,14 +188,14 @@ the neural network produces a painting with some Impressionist tertiary qualitie
 <img src="examples/Mix_Umbrellas_in_Dulcimer_Grove_at_the_Philadelphia_Folk_Festival/Mix_Umbrellas_in_Dulcimer_Grove_at_the_Philadelphia_Folk_Festival.png" height="250px">
 </p>
 
-* Another example:
+* Another example of applying a real photo as a background on a real-life photography as a content image in order to suggest tertiary qualities similar to those of Impressionism. (The content image photograph is at the Wikipedia Online Encyclopedia at [https://commons.wikimedia.org/wiki/File:Moraine_State_Park_Hot_air_balloons.jpg]](https://commons.wikimedia.org/wiki/File:Moraine_State_Park_Hot_air_balloons.jpg), and the background image is at the Wikipedia Online Encyclopedia at [https://upload.wikimedia.org/wikipedia/commons/4/40/Polar_Stratospheric_Cloud_type_I_above_Cirrus.jpg](https://upload.wikimedia.org/wikipedia/commons/4/40/Polar_Stratospheric_Cloud_type_I_above_Cirrus.jpg).)
 
 <p align="center">
 <img src="examples/Mix_Hot_air_balloon_sunrinse_polar_clouds_style_weight_150/background_sunrinse_polar_clouds.jpg" height="250px">
 <img src="examples/Mix_Hot_air_balloon_sunrinse_polar_clouds_style_weight_150/Hot_air_balloon.jpg" height="250px">
 </p>
 
-the neural network produces a painting:
+the neural-style network, when run with the option `-style_weight 150`, generated some paintings, the final of which was:
 
 <p align="center">
 <img src="examples/Mix_Hot_air_balloon_sunrinse_polar_clouds_style_weight_150/result_Hot_air_balloon_sunrinse_polar_clouds_style_weight_150.png" height="250px">
