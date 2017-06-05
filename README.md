@@ -188,6 +188,19 @@ the neural network produces a painting with some Impressionist tertiary qualitie
 <img src="examples/Mix_Umbrellas_in_Dulcimer_Grove_at_the_Philadelphia_Folk_Festival/Mix_Umbrellas_in_Dulcimer_Grove_at_the_Philadelphia_Folk_Festival.png" height="250px">
 </p>
 
+* Another example:
+
+<p align="center">
+<img src="examples/Mix_Hot_air_balloon_sunrinse_polar_clouds_style_weight_150/background_sunrinse_polar_clouds.jpg" height="250px">
+<img src="examples/Mix_Hot_air_balloon_sunrinse_polar_clouds_style_weight_150/Hot_air_balloon.jpg" height="250px">
+</p>
+
+the neural network produces a painting:
+
+<p align="center">
+<img src="examples/Mix_Hot_air_balloon_sunrinse_polar_clouds_style_weight_150/result_Hot_air_balloon_sunrinse_polar_clouds_style_weight_150.png" height="250px">
+</p>
+
 * This is an example of applying a background on a real-life photography in order to obtain tertiary qualities similar to one's of Claude Monet's in his Cathedral of Rouen series:
 
 <p align="center">
