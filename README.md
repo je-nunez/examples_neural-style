@@ -49,7 +49,7 @@ Other implementations of Neural Style in other backends and languages (this is n
 
 * Keras on either the Tensorflow or the Theano backend: [https://github.com/titu1994/Neural-Style-Transfer](https://github.com/titu1994/Neural-Style-Transfer)
 
-* Scala on the Java Virtual Machine on MxNet: [https://github.com/dmlc/mxnet/blob/master/scala-package/examples/src/main/scala/ml/dmlc/mxnet/examples/neuralstyle/NeuralStyle.scala](https://github.com/dmlc/mxnet/blob/master/scala-package/examples/src/main/scala/ml/dmlc/mxnet/examples/neuralstyle/NeuralStyle.scala)
+* Scala on the Java Virtual Machine on Apache MXNet: [https://github.com/apache/incubator-mxnet/blob/master/scala-package/examples/src/main/scala/ml/dmlc/mxnetexamples/neuralstyle/NeuralStyle.scala](https://github.com/apache/incubator-mxnet/blob/master/scala-package/examples/src/main/scala/ml/dmlc/mxnetexamples/neuralstyle/NeuralStyle.scala)
 
 * Caffe and PyCaffe: [https://github.com/fzliu/style-transfer](https://github.com/fzliu/style-transfer)
 
